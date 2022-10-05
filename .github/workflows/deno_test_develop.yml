@@ -57,4 +57,3 @@ jobs:
         with:
           project: xtendis3 # the name of the project on Deno Deploy
           entrypoint: main.ts # the entrypoint to deploy
-          import-map: import-map.json
