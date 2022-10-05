@@ -1,0 +1,11 @@
+{
+  "tasks": {
+    "start": "deno run -A --allow-env --watch=static/,routes/ dev.ts",
+    "test": "deno test --allow-env"
+  },
+  "importMap": "./import_map.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact"
+  }
+}
