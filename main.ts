@@ -10,8 +10,8 @@ import manifest from "./fresh.gen.ts";
 import twindPlugin from "$fresh/plugins/twind.ts";
 import twindConfig from "./twind.config.ts";
 
-//import { pool } from "@db" ;
+import { pool } from "@db" ;
 
 await start(manifest, { plugins: [twindPlugin(twindConfig)] });
 
-//await pool.end();
+await pool.end();
