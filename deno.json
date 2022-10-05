@@ -1,6 +1,6 @@
 {
   "tasks": {
-    "start": "deno run -A --allow-env --allow-read --watch=static/,routes/ dev.ts",
+    "start": "deno run -A --allow-env --allow-read --unsafely-ignore-certificate-errors --watch=static/,routes/ dev.ts",
     "test": "deno test --allow-env --allow-read"
   },
   "importMap": "./import_map.json",

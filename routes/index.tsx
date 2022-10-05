@@ -2,8 +2,10 @@ import Counter from "../islands/Counter.tsx";
 import { pool } from "@db";
 
 const client = await pool.connect();
-const array_result = await client.queryArray<[number]>(
-  "SELECT 1",
+const array_result = await client.queryArray<[string, string]>(
+  "select * from \
+  (select version()) as version, \
+  (select current_setting('server_version_num')) as version_number;",
 );
 console.log(array_result);
 client.release();
