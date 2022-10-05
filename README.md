@@ -1,8 +1,8 @@
 # deno fresh project
 
-![deno test main](https://github.com/IshiKakesuFun/deno-fresh-template/actions/workflows/deno_test_main.yml/badge.svg)
-![deno test develop](https://github.com/IshiKakesuFun/deno-fresh-template/actions/workflows/deno_test_develop.yml/badge.svg)
-![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/IshiKakesuFun/deno-fresh-template?sort=semver)
+![deno test main](https://github.com/IshiKakesuFun/XtendIS3/actions/workflows/deno_test_main.yml/badge.svg)
+![deno test develop](https://github.com/IshiKakesuFun/XtendIS3/actions/workflows/deno_test_develop.yml/badge.svg)
+![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/IshiKakesuFun/XtendIS3?sort=semver)
 
 ## Prerequisites
 
