@@ -5,7 +5,7 @@ const loadedEnv: DotenvConfig = await dotenv({ export: true, safe: true });
 const _environment: Environment = Deno.env.get("DENO_ENV")
   ?.toLocaleLowerCase() as Environment;
 const isDevelopment: boolean =
-  "development" === (_environment || "development");
+  "development" === (_environment || "test");
 
 const config: Config = {
   environment: _environment,

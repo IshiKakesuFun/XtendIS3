@@ -1,4 +1,4 @@
-# deno fresh project
+# deno fresh project - XtendIS3
 
 ![deno test main](https://github.com/IshiKakesuFun/XtendIS3/actions/workflows/deno_test_main.yml/badge.svg)
 ![deno test develop](https://github.com/IshiKakesuFun/XtendIS3/actions/workflows/deno_test_develop.yml/badge.svg)

@@ -1,4 +1,4 @@
-export type Environment = "production" | "development" | undefined;
+export type Environment = "production" | "development" | "test" | undefined;
 
 export interface Config {
   environment: Environment;
