@@ -1,7 +1,7 @@
 import config from "@config";
 import { Pool } from "$postgres/mod.ts";
 
-//const ca = await Deno.readTextFile("../supabase.crt");
+//const ca = await Deno.readTextFile("./supabase.crt");
 
 const pool: Pool = config.db.uri
   ? new Pool(config.db.uri, config.db.pool ?? 1, true)

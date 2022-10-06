@@ -1,5 +1,5 @@
 import { assertEquals } from "testing/asserts.ts";
 
-Deno.test("Pool instance exists", () => {
+Deno.test("String a=a", () => {
   assertEquals("a", "a");
 });
