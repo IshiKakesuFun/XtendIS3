@@ -1,10 +1,10 @@
 ```mermaid
 erDiagram
     GlobalSetting
-    User ||--|| UserPreference: has
-    User ||--o{ UserFilter: "can have"
-    User ||--o{ Message: "can receive"
-    UserPreference ||--o| UserFilter: "can contain"
+    UserPreference ||--o{ UserFilter: "can have"
+    UserPreference ||--o{ Message: "can receive"
+    UserPreference ||--o| UserFilter: "default LiveLog filter"
+    UserPreference ||--o| UserFilter: "default Device filter"
     AuthorizationGroup
     AuditLog ||--o| AuditLogDetail: "can have"
 ```
