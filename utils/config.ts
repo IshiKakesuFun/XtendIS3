@@ -1,5 +1,5 @@
 import { config as dotenv, DotenvConfig, stringify } from "dotenv/mod.ts";
-import { Environment, Config } from "../interfaces/Config.ts";
+import { Environment, Config } from "@inf/Config.ts";
 
 const loadedEnv: DotenvConfig = await dotenv({ export: true, safe: true });
 const _environment: Environment = Deno.env.get("DENO_ENV")
