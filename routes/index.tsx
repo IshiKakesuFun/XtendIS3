@@ -1,9 +1,8 @@
-import Counter from "../islands/Counter.tsx";
 import { pool } from "@db";
 
 const client = await pool.connect();
 const array_result = await client.queryArray<[string, string]>(
-  "select * from \
+"select * from \
   (select version()) as version, \
   (select current_setting('server_version_num')) as version_number;",
 );
@@ -19,11 +18,9 @@ export default function Home() {
         alt="the fresh logo: a sliced lemon dripping with juice"
       />
       <p class="my-6">
-        Welcome to `fresh`. Try updating this message in the ./routes/index.tsx
-        file, and refresh.
+      Welcome to `fresh`. Connected DB pool of
+        <span class="font-mono px-1">{array_result.rows[0][0]}</span>
       </p>
-      <Counter start={3} />
-      <div class="font-mono">{JSON.stringify(array_result)}</div>
     </div>
   );
 }

@@ -13,6 +13,7 @@
     "$postgres/": "https://deno.land/x/postgres@v0.16.1/",
     "@config": "./utils/config.ts",
     "@db": "./utils/db.ts",
-    "@inf/": "./interfaces/"
+    "@inf/": "./interfaces/",
+    "@schema/": "./schema/"
   }
 }
