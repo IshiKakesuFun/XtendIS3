@@ -33,11 +33,7 @@ export class Type extends IPgObject {
       Object.keys(rows[0]).join(", ")
     })
     VALUES
-    ${
-      rows.map((row) => {
-        return `(${row.id}, '${row.name}')`;
-      }).join(", ")
-    }
+    ${rows.map((row): string => `(${row.id}, '${row.name}')`).join(", ")}
     ${returning === undefined ? "" : `RETURNING ${returning}`};`;
   }
 }
