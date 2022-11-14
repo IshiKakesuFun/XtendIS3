@@ -30,11 +30,11 @@ export const handler = async (
   await transaction.queryArray<ITypeColumns[]>(
     type.insertQuery(_data, "*"),
   );
-  
+
   // Sequence: xtendise.group_id_seq
   const groupSeq = new GroupIdSeq();
   await transaction.queryArray(groupSeq.createQuery(false));
-  
+
   //Table: xtendise.group
   const group = new Group();
   await transaction.queryArray(group.createQuery(false));
@@ -42,7 +42,7 @@ export const handler = async (
   // initial load
   const groupData: IGroupColumns = { name: "MABg", type_id: 1 };
   const returning = await transaction.queryArray<IGroupColumns[]>(
-    group.insertQuery(groupData, "*")
+    group.insertQuery(groupData, "*"),
   );
 
   await transaction.commit();
